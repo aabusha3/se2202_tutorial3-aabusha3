@@ -1,5 +1,4 @@
-let getDictionary = function (lang)
-{
+let getDictionary = function(lang) {
     /*
        The value of the lang could be
         -'E' for English
@@ -16,8 +15,20 @@ let getDictionary = function (lang)
     /*
         Complete the definition of the englishDictionary function
     */
-    let englishDictionary = function (number)
-    {
+    let englishDictionary = function(number) {
+        switch (number) {
+            case 1:
+                return "one";
+                break;
+
+            case 2:
+                return "two";
+                break;
+
+            case 3:
+                return "three";
+                break;
+        }
         /*
             Use the switch-case statement to return the name that corresponds to the number in English
             ( 1, 2, 3 are enough)
@@ -25,34 +36,50 @@ let getDictionary = function (lang)
             2 -> two
             3 -> three
             use all small characters
-        */       
+        */
     }
 
     /*
         Complete the definiton of the englishDictionary function
     */
-    let frenchDictionary = function (number)
-    {
-        /*
-            Use the switch-case statement to return the name that corresonds to the number in French
-            ( 1, 2, 3 are enough)
-            1 -> un
-            2 -> deux
-            3 -> trois
-            use all small characters
-        */       
-    }
+    let frenchDictionary = function(number) {
+            switch (number) {
+                case 1:
+                    return "un";
+                    break;
 
-    /*
-        Write an if-statement that would return either the engishDictionary or the frenchDictionary 
-        based on the value of the argument 'lang'
-    */
+                case 2:
+                    return "deux";
+                    break;
+
+                case 3:
+                    return "trois";
+                    break;
+            }
+            /*
+                Use the switch-case statement to return the name that corresonds to the number in French
+                ( 1, 2, 3 are enough)
+                1 -> un
+                2 -> deux
+                3 -> trois
+                use all small characters
+            */
+        }
+        /*
+            Write an if-statement that would return either the engishDictionary or the frenchDictionary 
+            based on the value of the argument 'lang'
+        */
+    if (lang == "english")
+        return englishDictionary;
+    else if (lang == "french")
+        return frenchDictionary;
+
 }
 
 
 // Call the getDictionay function in a way that allows us to use the binding names below as the corresponding dictionary function
-let english; 
-let french;
+let english = getDictionary("english");
+let french = getDictionary("french");
 
 
 // DO NOT change the lines below
