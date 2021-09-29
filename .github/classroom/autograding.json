@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "CallbackFunctionsTest",
+      "setup": "",
+      "run": "node callbackFunctions.js",
+      "input": "",
+      "output": "false\r\ntrue\r\ntrue\r\nfalse\r\ntrue\r\nfalse",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "ReturningFunctionsTest",
+      "setup": "",
+      "run": "node returningFunctions.js",
+      "input": "",
+      "output": "one\r\nun\r\ntwo\r\ndeux\r\nthree\r\ntrois",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Closures",
+      "setup": "",
+      "run": "node closures.js",
+      "input": "",
+      "output": "9\r\n59049",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
