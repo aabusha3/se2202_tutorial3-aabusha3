@@ -56,9 +56,9 @@ let check = function(predicat, value) {
 
 
 console.log(check(even_predicat, 9));
-console.log(check(odd_predicat, 8));
 console.log(check(odd_predicat, 9));
 console.log(check(even_predicat, 8));
+console.log(check(odd_predicat, 8));
 let x;
 console.log(check(undefined_predicate, x));
 console.log(check(null_predicate, x));
