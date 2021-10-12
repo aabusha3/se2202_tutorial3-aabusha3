@@ -16,19 +16,6 @@ let getDictionary = function(lang) {
         Complete the definition of the englishDictionary function
     */
     let englishDictionary = function(number) {
-        switch (number) {
-            case 1:
-                return "one";
-                break;
-
-            case 2:
-                return "two";
-                break;
-
-            case 3:
-                return "three";
-                break;
-        }
         /*
             Use the switch-case statement to return the name that corresponds to the number in English
             ( 1, 2, 3 are enough)
@@ -37,25 +24,20 @@ let getDictionary = function(lang) {
             3 -> three
             use all small characters
         */
+        switch (number) {
+            case 1:
+                return "one";
+            case 2:
+                return "two";
+            case 3:
+                return "three";
+        }
     }
 
     /*
         Complete the definiton of the englishDictionary function
     */
     let frenchDictionary = function(number) {
-            switch (number) {
-                case 1:
-                    return "un";
-                    break;
-
-                case 2:
-                    return "deux";
-                    break;
-
-                case 3:
-                    return "trois";
-                    break;
-            }
             /*
                 Use the switch-case statement to return the name that corresonds to the number in French
                 ( 1, 2, 3 are enough)
@@ -64,6 +46,14 @@ let getDictionary = function(lang) {
                 3 -> trois
                 use all small characters
             */
+            switch (number) {
+                case 1:
+                    return "un";
+                case 2:
+                    return "deux";
+                case 3:
+                    return "trois";
+            }
         }
         /*
             Write an if-statement that would return either the engishDictionary or the frenchDictionary 

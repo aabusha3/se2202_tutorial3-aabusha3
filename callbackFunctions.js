@@ -1,8 +1,5 @@
 let even_predicat = function(value) {
-    if (!((value % 2) == 0))
-        return false;
-    else
-        return true;
+    return (value % 2) == 0;
     /* check whether the value is even 
      (a number is even when the remainder of its division by 2 is equal to 0)
      return true if the value is even or false when the value is odd 
@@ -10,10 +7,7 @@ let even_predicat = function(value) {
 };
 
 let odd_predicat = function(value) {
-    if ((value % 2) == 0)
-        return false;
-    else
-        return true;
+    return !((value % 2) == 0);
     /*
     check whether the value is even 
      return true if the value is even or false when the value is odd
@@ -21,10 +15,7 @@ let odd_predicat = function(value) {
 };
 
 let undefined_predicate = function(value) {
-    if (value === undefined)
-        return true;
-    else
-        return false;
+    return value === undefined;
     /* 
         check and return a boolean value to indicate 
         whether the given value is undefined
@@ -34,10 +25,7 @@ let undefined_predicate = function(value) {
 };
 
 let null_predicate = function(value) {
-    if (value === null)
-        return true;
-    else
-        return false;
+    return value === null;
     /* 
         check and return a boolean value to indicate 
         whether the given value is null
